@@ -1,65 +1,50 @@
+/* styles.css */
 body {
-    background-color: black;
-    color: #33ff33;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+header {
+    background: #222;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-h1.glitch {
-    font-size: 3rem;
-    position: relative;
-    color: #33ff33;
-    animation: glitch 1.5s infinite;
+nav {
+    text-align: center;
+    margin: 1rem 0;
 }
 
-@keyframes glitch {
-    0% { text-shadow: 2px 0 red, -2px 0 blue; }
-    50% { text-shadow: -2px 0 red, 2px 0 blue; }
-    100% { text-shadow: 2px 0 red, -2px 0 blue; }
-}
-
-.terminal {
-    background-color: #111;
-    width: 80%;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #33ff33;
-    overflow-y: auto;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#output {
-    flex: 1;
-    overflow-y: auto;
-}
-
-.input-container {
-    display: flex;
-    align-items: center;
-}
-
-.prompt {
-    margin-right: 5px;
-    color: #33ff33;
-}
-
-#terminal-input {
-    background-color: black;
-    color: #33ff33;
+nav button {
+    background: #444;
+    color: white;
     border: none;
-    outline: none;
-    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }

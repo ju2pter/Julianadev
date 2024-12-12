@@ -3,20 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacker's Terminal</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Juliana Dev - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1 class="glitch">Juliana's Cyber Lab</h1>
-        <div class="terminal">
-            <div id="output"></div>
-            <div class="input-container">
-                <span class="prompt">guest@julianadev:~$ </span>
-                <input type="text" id="terminal-input" autofocus>
+    <header>
+        <h1>Juliana Dev</h1>
+        <p>Your next Python Backend Developer and Cybersecurity Specialist</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('about')">About Me</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('certifications')">Certifications</button>
+        <button onclick="showSection('education')">Education</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+
+    <main>
+        <section id="about" class="hidden">
+            <h2>About Me</h2>
+            <p>Hello! I'm Juliana, a Python backend developer with expertise in Django, and a cybersecurity enthusiast with experience in penetration testing and network analysis.</p>
+            <p>I thrive in remote roles, collaborating with international teams, and building secure, scalable applications.</p>
+        </section>
+
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Cybersecurity Network Analyzer</h3>
+                <p>A Python tool for real-time packet inspection, leveraging pandas and scapy for data parsing and analysis.</p>
+                <a href="https://github.com/ju2pter/network-analyzer" target="_blank">View on GitHub</a>
             </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A sleek, professional portfolio designed for remote job applications in Python development and cybersecurity.</p>
+                <a href="https://ju2pter.github.io/JulianaDev" target="_blank">Live Demo</a>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python (Flask, Django)</li>
+                <li>Cybersecurity (Penetration Testing, Nmap, Wireshark)</li>
+                <li>Docker, Kubernetes, Git</li>
+                <li>Cloud Platforms: AWS, Azure</li>
+                <li>Data Analysis: pandas, NumPy</li>
+            </ul>
+        </section>
+
+        <section id="certifications" class="hidden">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified Ethical Hacker (CEH)</li>
+                <li>Python for Everybody Specialization (Coursera)</li>
+                <li>AWS Certified Solutions Architect – Associate</li>
+            </ul>
+        </section>
+
+        <section id="education" class="hidden">
+            <h2>Education</h2>
+            <p>Bachelor's in Computer Science - Universidade XYZ</p>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h2>Contact</h2>
+            <p>Email: juliana.dev@example.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/juliana-dev/" target="_blank">linkedin.com/in/juliana-dev</a></p>
+            <p>GitHub: <a href="https://github.com/ju2pter" target="_blank">github.com/ju2pter</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Juliana Dev. All rights reserved.</p>
+    </footer>
 </body>
 </html>
